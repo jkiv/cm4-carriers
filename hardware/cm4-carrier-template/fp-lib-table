@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name RPi_Compute_Module_4)(type KiCad)(uri ${KIPRJMOD}/../external/RPi-CM4-Kicad/RPi_Compute_Module_4.pretty)(options "")(descr ""))
+  (lib (name jkiv-library)(type KiCad)(uri ${KIPRJMOD}/../external/jkiv-kicad-library/jkiv-library.pretty)(options "")(descr ""))
+)
