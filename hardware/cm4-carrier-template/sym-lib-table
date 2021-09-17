@@ -4,4 +4,5 @@
   (lib (name jkiv-expansion)(type Legacy)(uri ${KIPRJMOD}/../external/jkiv-kicad-library/jkiv-symbols/jkiv-expansion.lib)(options "")(descr ""))
   (lib (name dk_USB-DVI-HDMI-Connectors)(type Legacy)(uri C:/Users/Alice/Github/cm4-carriers/hardware/external/digikey-kicad-library/digikey-symbols/dk_USB-DVI-HDMI-Connectors.lib)(options "")(descr ""))
   (lib (name dk_Modular-Connectors-Jacks-With-Magnetics)(type Legacy)(uri C:/Users/Alice/Github/cm4-carriers/hardware/external/digikey-kicad-library/digikey-symbols/dk_Modular-Connectors-Jacks-With-Magnetics.lib)(options "")(descr ""))
+  (lib (name cm4-carrier-template-rescue)(type Legacy)(uri ${KIPRJMOD}/cm4-carrier-template-rescue.lib)(options "")(descr ""))
 )
