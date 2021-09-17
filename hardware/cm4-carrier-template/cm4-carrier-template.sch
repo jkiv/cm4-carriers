@@ -1283,4 +1283,216 @@ F 3 "" H 4900 6050 50  0001 C CNN
 	1    4900 6050
 	1    0    0    -1  
 $EndComp
+$Comp
+L jkiv-abracon:Abracon_ARJ-139 J3
+U 1 1 613BBD6A
+P 6250 5400
+F 0 "J3" H 6250 6265 50  0000 C CNN
+F 1 "Abracon_ARJ-139" H 6250 6174 50  0000 C CNN
+F 2 "jkiv-library:RJ45_Abracon_ARJ136" V 6050 5375 50  0001 C CNN
+F 3 "https://abracon.com/Magnetics/lan/ARJ-139.pdf" V 6050 5375 50  0001 C CNN
+	1    6250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0105
+U 1 1 6142AE4F
+P 6250 6200
+F 0 "#PWR0105" H 6250 5950 50  0001 C CNN
+F 1 "GNDREF" H 6255 6027 50  0000 C CNN
+F 2 "" H 6250 6200 50  0001 C CNN
+F 3 "" H 6250 6200 50  0001 C CNN
+	1    6250 6200
+	1    0    0    -1  
+$EndComp
+Text Label 6850 4800 0    50   ~ 0
+PoE_TAP1
+Text Label 6850 4900 0    50   ~ 0
+PoE_TAP2
+Text Label 6850 5000 0    50   ~ 0
+PoE_TAP3
+Text Label 6850 5100 0    50   ~ 0
+PoE_TAP4
+Text Notes 5300 6050 0    50   ~ 0
+TODO CT
+Wire Wire Line
+	6850 5100 7200 5100
+Wire Wire Line
+	6850 5000 7200 5000
+Wire Wire Line
+	6850 4900 7200 4900
+Wire Wire Line
+	6850 4800 7200 4800
+Wire Wire Line
+	5650 5750 4800 5750
+Wire Wire Line
+	5650 5850 5500 5850
+Wire Wire Line
+	4800 5850 5300 5850
+$Comp
+L Device:R_Small_US R4
+U 1 1 61492BBB
+P 5400 5850
+F 0 "R4" V 5350 5700 50  0000 C CNN
+F 1 "100R" V 5350 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5400 5850 50  0001 C CNN
+F 3 "~" H 5400 5850 50  0001 C CNN
+	1    5400 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 4950 5650 4950
+Wire Wire Line
+	5600 4900 5600 4950
+$Comp
+L power:+3V3 #PWR0110
+U 1 1 6148F9C8
+P 5600 4900
+F 0 "#PWR0110" H 5600 4750 50  0001 C CNN
+F 1 "+3V3" H 5615 5073 50  0000 C CNN
+F 2 "" H 5600 4900 50  0001 C CNN
+F 3 "" H 5600 4900 50  0001 C CNN
+	1    5600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5050 5300 5050
+Text Label 5150 5750 2    50   ~ 0
+E0_LEDL
+Text Label 5150 5850 2    50   ~ 0
+~E0_LEDL
+Text Label 5150 5050 2    50   ~ 0
+~E0_LEDR
+Wire Wire Line
+	5650 5050 5500 5050
+$Comp
+L Device:R_Small_US R3
+U 1 1 6147C9FC
+P 5400 5050
+F 0 "R3" V 5350 4900 50  0000 C CNN
+F 1 "100R" V 5350 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5400 5050 50  0001 C CNN
+F 3 "~" H 5400 5050 50  0001 C CNN
+	1    5400 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 5300 7200 5300
+Wire Wire Line
+	6850 5400 7200 5400
+Wire Wire Line
+	6850 5500 7200 5500
+Wire Wire Line
+	6850 5600 7200 5600
+Wire Wire Line
+	6850 5700 7200 5700
+Wire Wire Line
+	6850 5800 7200 5800
+Wire Wire Line
+	6850 5900 7200 5900
+Wire Wire Line
+	6850 6000 7200 6000
+Text Label 6850 6000 0    50   ~ 0
+E0_TR2-
+Text Label 6850 5900 0    50   ~ 0
+E0_TR2+
+Text Label 6850 5800 0    50   ~ 0
+E0_TR1+
+Text Label 6850 5700 0    50   ~ 0
+E0_TR1-
+Text Label 6850 5600 0    50   ~ 0
+E0_TR3+
+Text Label 6850 5500 0    50   ~ 0
+E0_TR3-
+Text Label 6850 5400 0    50   ~ 0
+E0_TR0-
+Text Label 6850 5300 0    50   ~ 0
+E0_TR0+
+Wire Wire Line
+	3300 5200 2950 5200
+Wire Wire Line
+	3300 5300 2950 5300
+Wire Wire Line
+	3300 5400 2950 5400
+Wire Wire Line
+	3300 5500 2950 5500
+Text Label 3300 5500 2    50   ~ 0
+PoE_TAP4
+Text Label 3300 5400 2    50   ~ 0
+PoE_TAP3
+Text Label 3300 5300 2    50   ~ 0
+PoE_TAP2
+Text Label 3300 5200 2    50   ~ 0
+PoE_TAP1
+Wire Wire Line
+	3250 5100 3300 5100
+Wire Wire Line
+	3250 5050 3250 5100
+$Comp
+L power:VBUS #PWR0109
+U 1 1 6144068F
+P 3250 5050
+F 0 "#PWR0109" H 3250 4900 50  0001 C CNN
+F 1 "VBUS" H 3265 5223 50  0000 C CNN
+F 2 "" H 3250 5050 50  0001 C CNN
+F 3 "" H 3250 5050 50  0001 C CNN
+	1    3250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 6143EE9C
+P 4050 5050
+F 0 "#PWR0108" H 4050 4900 50  0001 C CNN
+F 1 "+5V" H 4065 5223 50  0000 C CNN
+F 2 "" H 4050 5050 50  0001 C CNN
+F 3 "" H 4050 5050 50  0001 C CNN
+	1    4050 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5100 4050 5050
+Wire Wire Line
+	4000 5100 4050 5100
+Wire Wire Line
+	4050 5600 4000 5600
+Wire Wire Line
+	4050 5650 4050 5600
+$Comp
+L power:GND #PWR0107
+U 1 1 6143A266
+P 4050 5650
+F 0 "#PWR0107" H 4050 5400 50  0001 C CNN
+F 1 "GND" H 4055 5477 50  0000 C CNN
+F 2 "" H 4050 5650 50  0001 C CNN
+F 3 "" H 4050 5650 50  0001 C CNN
+	1    4050 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0106
+U 1 1 6142B5B0
+P 3250 5650
+F 0 "#PWR0106" H 3250 5400 50  0001 C CNN
+F 1 "GNDREF" H 3255 5477 50  0000 C CNN
+F 2 "" H 3250 5650 50  0001 C CNN
+F 3 "" H 3250 5650 50  0001 C CNN
+	1    3250 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5650 3250 5600
+Wire Wire Line
+	3250 5600 3300 5600
+$Comp
+L jkiv-expansion:Expansion_PoE U6
+U 1 1 613C2C50
+P 3650 5300
+F 0 "U6" H 3650 5765 50  0000 C CNN
+F 1 "Expansion_PoE" H 3650 5674 50  0000 C CNN
+F 2 "jkiv-library:expansion-poe-P2.0mm_SMD" H 3650 5300 50  0001 C CNN
+F 3 "" H 3650 5300 50  0001 C CNN
+	1    3650 5300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
