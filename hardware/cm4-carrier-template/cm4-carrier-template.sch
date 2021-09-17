@@ -65,6 +65,8 @@ F 0 "U5" H 7950 1887 60  0000 C CNN
 F 1 "Compute_Module_4_Functional" H 7950 1781 60  0000 C CNN
 F 2 "RPi_Compute_Module_4:Raspberry-Pi-4-Compute-Module" H 7200 1650 60  0001 L CNN
 F 3 "" H 7200 1450 60  0001 L CNN
+F 4 "DF40HC(3.0)-100DS-0.4V(51-ND" H 7000 1600 50  0001 C CNN "Digi-Key_PN"
+F 5 "DF40HC(3.0)-100DS-0.4V(51" H 7000 1600 50  0001 C CNN "MPN"
 	10   7000 1600
 	1    0    0    -1  
 $EndComp
@@ -74,7 +76,7 @@ U 1 1 613A5B0A
 P 1000 1800
 F 0 "J1" H 1107 2667 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1107 2576 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 1150 1800 50  0001 C CNN
+F 2 "jkiv-library:USB_C_Receptacle_GCT-USB4105" H 1150 1800 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1150 1800 50  0001 C CNN
 	1    1000 1800
 	1    0    0    -1  
