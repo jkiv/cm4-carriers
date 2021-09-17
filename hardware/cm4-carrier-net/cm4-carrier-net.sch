@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "cm4-carrier-template"
+Title "cm4-carrier-net"
 Date "2021-09-17"
 Rev "v1.0a"
 Comp "fourside.io"
