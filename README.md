@@ -4,7 +4,7 @@
 
 This repository contains various Raspberry Pi Compute Module 4 (CM4) carrier boards designed with specific applications in mind.
 
-It also contains a 90mm x 90mm "template" board from which application-specific boards can be quickly derived.
+It also contains "template" boards from which application-specific boards can be quickly derived.
 
 ## Boards
 
