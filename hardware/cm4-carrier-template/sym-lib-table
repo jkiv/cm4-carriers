@@ -1,5 +1,4 @@
 (sym_lib_table
   (lib (name Raspberry_Pi_Compute_Module_4)(type Legacy)(uri ${KIPRJMOD}/../external/RPi-CM4-Kicad/Raspberry_Pi_Compute_Module_4.lib)(options "")(descr ""))
   (lib (name jkiv-abracon)(type Legacy)(uri ${KIPRJMOD}/../external/jkiv-kicad-library/jkiv-symbols/jkiv-abracon.lib)(options "")(descr ""))
-  (lib (name jkiv-expansion)(type Legacy)(uri ${KIPRJMOD}/../external/jkiv-kicad-library/jkiv-symbols/jkiv-expansion.lib)(options "")(descr ""))
 )

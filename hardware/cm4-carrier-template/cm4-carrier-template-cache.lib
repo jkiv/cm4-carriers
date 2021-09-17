@@ -550,11 +550,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# cm4-carrier-template-rescue_Abracon_ARJM11-502-jkiv-abracon
+# jkiv-abracon_Abracon_ARJM11-502
 #
-DEF cm4-carrier-template-rescue_Abracon_ARJM11-502-jkiv-abracon J 0 40 Y Y 1 F N
+DEF jkiv-abracon_Abracon_ARJM11-502 J 0 40 Y Y 1 F N
 F0 "J" -450 600 50 H V R CNN
-F1 "cm4-carrier-template-rescue_Abracon_ARJM11-502-jkiv-abracon" -250 600 50 H V L CNN
+F1 "jkiv-abracon_Abracon_ARJM11-502" -250 600 50 H V L CNN
 F2 "" -200 -25 50 V I C CNN
 F3 "" -200 -25 50 V I C CNN
 $FPLIST

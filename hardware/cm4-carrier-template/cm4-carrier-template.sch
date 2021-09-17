@@ -615,7 +615,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 4950 3000 4950
 $Comp
-L cm4-carrier-template-rescue:Abracon_ARJM11-502-jkiv-abracon J3
+L jkiv-abracon:Abracon_ARJM11-502 J3
 U 1 1 61426389
 P 2150 5150
 F 0 "J3" H 2100 5865 50  0000 C CNN
