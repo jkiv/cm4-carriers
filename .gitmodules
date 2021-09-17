@@ -4,6 +4,3 @@
 [submodule "hardware/external/RPi-CM4-Kicad"]
 	path = hardware/external/RPi-CM4-Kicad
 	url = https://github.com/Kedarius/RPi-CM4-Kicad.git
-[submodule "hardware/external/digikey-kicad-library"]
-	path = hardware/external/digikey-kicad-library
-	url = https://github.com/Digi-Key/digikey-kicad-library.git
