@@ -70,20 +70,8 @@ F 5 "DF40HC(3.0)-100DS-0.4V(51" H 7000 1600 50  0001 C CNN "MPN"
 	10   7000 1600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 613A5B0A
-P 1000 1800
-F 0 "J1" H 1107 2667 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 1107 2576 50  0000 C CNN
-F 2 "jkiv-library:USB_C_Receptacle_GCT-USB4105" H 1150 1800 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1150 1800 50  0001 C CNN
-	1    1000 1800
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1600 2300
 NoConn ~ 1600 2400
-NoConn ~ 700  2700
 $Comp
 L Device:R_Small_US R1
 U 1 1 613B205C
@@ -410,17 +398,6 @@ Text Label 3750 3400 2    50   ~ 0
 SD_D0
 Text Label 3750 3000 2    50   ~ 0
 SD_CMD
-$Comp
-L power:GND #PWR0114
-U 1 1 613FBAE3
-P 3450 3300
-F 0 "#PWR0114" H 3450 3050 50  0001 C CNN
-F 1 "GND" V 3455 3172 50  0000 R CNN
-F 2 "" H 3450 3300 50  0001 C CNN
-F 3 "" H 3450 3300 50  0001 C CNN
-	1    3450 3300
-	0    1    1    0   
-$EndComp
 Text Label 3750 3200 2    50   ~ 0
 SD_CLK
 Wire Wire Line
@@ -431,8 +408,6 @@ Wire Wire Line
 	3750 3000 3450 3000
 Wire Wire Line
 	3750 3200 3450 3200
-Wire Wire Line
-	3750 3300 3450 3300
 Wire Wire Line
 	3750 3400 3450 3400
 Wire Wire Line
@@ -671,23 +646,23 @@ Wire Wire Line
 $Comp
 L Power_Protection:TPD2EUSB30 U6
 U 1 1 61578F10
-P 1550 3200
-F 0 "U6" H 1550 3567 50  0000 C CNN
-F 1 "TPD2EUSB30" H 1550 3476 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:Texas_DRT-3" H 800 2900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf" H 1550 3200 50  0001 C CNN
-	1    1550 3200
+P 2050 3200
+F 0 "U6" H 2050 3567 50  0000 C CNN
+F 1 "TPD2EUSB30" H 2050 3476 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:Texas_DRT-3" H 1300 2900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf" H 2050 3200 50  0001 C CNN
+	1    2050 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0107
 U 1 1 615AE28D
-P 1000 2700
-F 0 "#PWR0107" H 1000 2450 50  0001 C CNN
-F 1 "GND" H 1005 2527 50  0000 C CNN
-F 2 "" H 1000 2700 50  0001 C CNN
-F 3 "" H 1000 2700 50  0001 C CNN
-	1    1000 2700
+P 700 3000
+F 0 "#PWR0107" H 700 2750 50  0001 C CNN
+F 1 "GND" H 705 2827 50  0000 C CNN
+F 2 "" H 700 3000 50  0001 C CNN
+F 3 "" H 700 3000 50  0001 C CNN
+	1    700  3000
 	1    0    0    -1  
 $EndComp
 Text Label 1600 1200 0    50   ~ 0
@@ -748,12 +723,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0109
 U 1 1 615F04EE
-P 1550 3600
-F 0 "#PWR0109" H 1550 3350 50  0001 C CNN
-F 1 "GND" H 1555 3427 50  0000 C CNN
-F 2 "" H 1550 3600 50  0001 C CNN
-F 3 "" H 1550 3600 50  0001 C CNN
-	1    1550 3600
+P 2050 3600
+F 0 "#PWR0109" H 2050 3350 50  0001 C CNN
+F 1 "GND" H 2055 3427 50  0000 C CNN
+F 2 "" H 2050 3600 50  0001 C CNN
+F 3 "" H 2050 3600 50  0001 C CNN
+	1    2050 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -769,14 +744,14 @@ Wire Wire Line
 	2350 1250 2350 1200
 Wire Wire Line
 	2350 1500 2150 1500
-Text Label 1950 3200 0    50   ~ 0
+Text Label 2450 3200 0    50   ~ 0
 USB_D-
 Wire Wire Line
-	1950 3200 2250 3200
-Text Label 1150 3200 2    50   ~ 0
+	2450 3200 2750 3200
+Text Label 1650 3200 2    50   ~ 0
 USB_D+
 Wire Wire Line
-	1150 3200 850  3200
+	1650 3200 1350 3200
 Wire Notes Line
 	6900 4450 6900 7750
 $Comp
@@ -838,19 +813,6 @@ F 3 "" H 2150 5800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2650 5150 3250 5150
-$Comp
-L power:GND #PWR0115
-U 1 1 617F991E
-P 8300 950
-F 0 "#PWR0115" H 8300 700 50  0001 C CNN
-F 1 "GND" V 8305 822 50  0000 R CNN
-F 2 "" H 8300 950 50  0001 C CNN
-F 3 "" H 8300 950 50  0001 C CNN
-	1    8300 950 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8300 950  8000 950 
 Wire Wire Line
 	6650 1600 6650 1700
 NoConn ~ 7000 1800
@@ -1051,8 +1013,6 @@ Wire Wire Line
 Connection ~ 5700 7300
 Text Label 3450 3100 0    50   ~ 0
 SD_PWR
-Wire Wire Line
-	3450 3100 3750 3100
 Wire Wire Line
 	6300 6950 6400 6950
 Wire Wire Line
@@ -1292,4 +1252,107 @@ F 3 "~" H 10850 6850 50  0001 C CNN
 	1    10850 6850
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 61473C68
+P 3200 3300
+F 0 "#PWR0114" H 3200 3050 50  0001 C CNN
+F 1 "GND" H 3205 3127 50  0000 C CNN
+F 2 "" H 3200 3300 50  0001 C CNN
+F 3 "" H 3200 3300 50  0001 C CNN
+	1    3200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 61473DCC
+P 3200 3200
+F 0 "C4" H 3292 3246 50  0000 L CNN
+F 1 "22u" H 3292 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3200 3200 50  0001 C CNN
+F 3 "~" H 3200 3200 50  0001 C CNN
+	1    3200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3100 3750 3100
+Wire Wire Line
+	3200 3300 3750 3300
+Connection ~ 3200 3300
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 613A5B0A
+P 1000 1800
+F 0 "J1" H 1107 2667 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1107 2576 50  0000 C CNN
+F 2 "jkiv-library:USB_C_Receptacle_GCT-USB4105" H 1150 1800 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1150 1800 50  0001 C CNN
+	1    1000 1800
+	1    0    0    -1  
+$EndComp
+Text Label 8000 950  0    50   ~ 0
+USB_OTG_ID
+$Comp
+L Device:C_Small C5
+U 1 1 614E16BC
+P 700 2800
+F 0 "C5" H 792 2846 50  0000 L CNN
+F 1 "100n" H 792 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 700 2800 50  0001 C CNN
+F 3 "~" H 700 2800 50  0001 C CNN
+	1    700  2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  3000 700  2950
+Wire Wire Line
+	700  2950 1000 2950
+Wire Wire Line
+	1000 2700 1000 2950
+Connection ~ 700  2950
+Wire Wire Line
+	700  2950 700  2900
+Wire Wire Line
+	9100 1100 9100 1050
+$Comp
+L power:GND #PWR0115
+U 1 1 616548E2
+P 9100 1100
+F 0 "#PWR0115" H 9100 850 50  0001 C CNN
+F 1 "GND" H 9105 927 50  0000 C CNN
+F 2 "" H 9100 1100 50  0001 C CNN
+F 3 "" H 9100 1100 50  0001 C CNN
+	1    9100 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 850  9050 850 
+Wire Wire Line
+	9100 800  9100 850 
+$Comp
+L power:+3V3 #PWR0128
+U 1 1 6159525D
+P 9100 800
+F 0 "#PWR0128" H 9100 650 50  0001 C CNN
+F 1 "+3V3" H 9115 973 50  0000 C CNN
+F 2 "" H 9100 800 50  0001 C CNN
+F 3 "" H 9100 800 50  0001 C CNN
+	1    9100 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 950  8650 950 
+$Comp
+L Switch:SW_SPDT SW3
+U 1 1 6173091F
+P 8850 950
+F 0 "SW3" H 8850 1235 50  0000 C CNN
+F 1 "USB_OTG" H 8850 1144 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 8850 950 50  0001 C CNN
+F 3 "~" H 8850 950 50  0001 C CNN
+	1    8850 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 1050 9050 1050
 $EndSCHEMATC

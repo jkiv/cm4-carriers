@@ -8,7 +8,19 @@ It also contains "template" boards from which application-specific boards can be
 
 ## Boards
 
-> Soon...
+### cm4-carrier-net
+
+![](hardware/cm4-carrier-net/images/cm4-carrier-net-v1.0a.png)
+
+#### About
+A carrier board that provides the CM4 with an Ethernet interface.
+
+This board can also be used to program the eMMC memory for use on other carrier boards.
+
+#### Features
+* Gigabit Ethernet
+* USB Type-C 5V power and data (USB 2.0)
+* Micro SD card slot
 
 ## Donate
 
